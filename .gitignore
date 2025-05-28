@@ -1,0 +1,76 @@
+# Entorno virtual
+venv/
+.env/
+.envrc
+.python-version
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos de desarrollo
+.venv/
+env/
+
+# Archivos de configuración sensible
+instance/
+*.env
+*.secret
+*.key
+*.pem
+*.cert
+
+# Base de datos y migraciones (si usas SQLite o similares)
+*.sqlite
+*.db
+migrations/
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de caché y logs
+*.log
+logs/
+.cache/
+.pytest_cache/
+
+# Archivos de paquetes y distribución
+*.egg-info/
+*.egg
+dist/
+build/
+sdist/
+*.dist-info/
+
+# Archivos de coverage
+.coverage
+htmlcov/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de Jupyter Notebook (si los usas)
+.ipynb_checkpoints/
+
+# Archivos temporales
+*.tmp
+*.bak
+*~
+
+# Archivos específicos de Flask
+.flaskenv
+.flask_secret
+
+# Archivos de testing (opcional)
+test-reports/
+junit.xml
+
+# Archivos de documentación
+docs/_build/
