@@ -8,7 +8,7 @@ app.secret_key = "clave-secreta"
 
 # Configuración de Keycloak
 keycloak_openid = KeycloakOpenID(
-    server_url="http://localhost:8081/",
+    server_url="http://host.docker.internal:8081/",
     client_id="frontend-client",
     realm_name="mi-realm",
 )
@@ -101,4 +101,4 @@ def logout():
         return redirect(url_for('login'))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
