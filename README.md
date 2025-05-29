@@ -10,7 +10,7 @@ Aplicación de que integra Flask con Keycloak para autenticación y autorizació
 
 ## Configuración inicial
 
-1. Clona los repositorio o descarga los archivos -> Repositorio keycloak : https://github.com/floradaro/Keycloak
+1. Clona los repositorio o descarga los archivos -> Repositorio keycloak : https://github.com/floradaro/ml_keycloak
 
 2. Crea un entorno virtual (recomendado):
 
@@ -35,3 +35,19 @@ Inicia el servidor Flask con:
 ```bash
 python app.py
 ```
+
+# Desde docker Desktop
+
+## Para levantar el contenendor
+
+Estando dentro del directorio
+
+```bash
+docker build -t flask-frontend .
+docker run -d -p 5000:5000 --name flask-frontend flask-frontend
+```
+## Proba en el navegador
+
+Abrí en el navegador:
+👉 http://localhost:5000
+Deberías ser redirigido al login de Keycloak y luego ver los botones según tus roles.

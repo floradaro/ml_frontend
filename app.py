@@ -10,7 +10,7 @@ app.secret_key = "clave-secreta"
 keycloak_openid = KeycloakOpenID(
     server_url="http://host.docker.internal:8081/",
     client_id="frontend-client",
-    realm_name="mi-realm",
+    realm_name="ml",
 )
 
 REDIRECT_URI = "http://localhost:5000/callback"
